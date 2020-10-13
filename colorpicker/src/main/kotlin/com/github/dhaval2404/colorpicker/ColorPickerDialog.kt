@@ -236,6 +236,7 @@ class ColorPickerDialog private constructor(
 
         // Set Submit Click Listener
         dialog.setPositiveButton(positiveButton) { _, _ ->
+
             val color = colorPicker.getColor()
             val colorHex = ColorUtil.formatColor(color)
             colorListener?.onColorSelected(color, colorHex)
@@ -249,6 +250,6 @@ class ColorPickerDialog private constructor(
         alertDialog.show()
 
         // Set Button Text Color
-        alertDialog.setButtonTextColor()
+        // alertDialog.setButtonTextColor()
     }
 }
